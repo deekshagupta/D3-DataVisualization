@@ -36,9 +36,11 @@
     "ng2-cache": "0.1.11",
     "popper.js": "1.12.9",
     "rxjs": "5.5.7",
-    "zone.js": "0.8.20",
-    "@angular/cli": "~7.3.1",
+    "zone.js": "0.8.20"
+  },
+  "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "~7.3.1",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
     "@types/node": "~8.9.4",
@@ -56,8 +58,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  },
-  "devDependencies": {
-    
   }
 }
