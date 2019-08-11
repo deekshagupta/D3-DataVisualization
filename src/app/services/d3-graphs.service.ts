@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class D3GraphsService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getD3GraphsData() {
-    return this.http.get('./assets/data.json').map(res => res.json());
+    getD3Graph(graphType) {
+    console.log(graphType);console.log('./assets/' + graphType + '.json');
+    return this.http.get('./assets/' + graphType + '.json');
   }
 }
